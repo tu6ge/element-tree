@@ -52,4 +52,4 @@ export default {
 ```
 
 ## 最终的效果
-![](http://github.com/tu6ge/element-tree/raw/master/img/view.png)
+![img](http://github.com/tu6ge/element-tree/raw/master/img/view.png)
