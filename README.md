@@ -50,3 +50,6 @@ export default {
 </script>
 
 ```
+
+最终的效果
+![](http://github.com/tu6ge/element-tree/raw/master/img/view.png)
