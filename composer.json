@@ -1,0 +1,16 @@
+{
+    "name": "tu6ge/element-tree",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tu6ge",
+            "email": "772364230@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ElementTree\\": "src/"
+        }
+    }
+}
