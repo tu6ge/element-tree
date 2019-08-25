@@ -52,6 +52,6 @@ export default {
 ```
 
 ## 最终的效果
-![img](preview.png)
+![img](img/preview.png)
 
 
