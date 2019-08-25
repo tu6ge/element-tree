@@ -12,5 +12,8 @@
         "psr-4": {
             "ElementTree\\": "src/"
         }
-    }
+    },
+    "keywords":[
+        "read path","element-ui","vue","tree","path tree"
+    ]
 }
