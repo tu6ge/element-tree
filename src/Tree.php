@@ -1,13 +1,22 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ZHIYUAN
- * Date: 2019-08-24
- * Time: 13:26
- */
+
+namespace ElementTree;
 
 class Tree
 {
+    protected $label = 'label';
+    protected $children = 'children';
+
+    public function __construct($config=[])
+    {
+        if(isset($config['label']) && !empty($config['label'])){
+            $this->label = $config['label'];
+        }
+        if(isset($config['children']) && !empty($config['children'])){
+            $this->children = $config['children'];
+        }
+    }
+
     public function get($dir)
     {
         $array = $this->recurDir($dir);
@@ -16,11 +25,9 @@ class Tree
     }
 
     /**
-     * 把目录结构转换成vue可识别的格式
+     * 把目录结构转换成element-ui可识别的格式
      * @param $array
      * @return array
-     * @author tu6ge
-     * @date 2019-08-23 16:12
      */
     public function iconv_array($array)
     {
@@ -28,12 +35,12 @@ class Tree
         foreach($array as $key=>$val){
             if(is_array($val)){
                 $result[] = [
-                    'label' => pathinfo($key, PATHINFO_BASENAME),
-                    'children' => $this->iconv_array($val),
+                    $this->label => pathinfo($key, PATHINFO_BASENAME),
+                    $this->children => $this->iconv_array($val),
                 ];
             }else{
                 $result[] = [
-                    'label' => pathinfo($val, PATHINFO_BASENAME),
+                    $this->label => pathinfo($val, PATHINFO_BASENAME),
                 ];
             }
         }
@@ -44,8 +51,6 @@ class Tree
      * 读取目录树，保存到多维数组中
      * @param $pathName
      * @return array|null
-     * @author tu6ge
-     * @date 2019-08-23 16:13
      */
     function recurDir($pathName)
     {
