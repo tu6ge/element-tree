@@ -2,13 +2,13 @@
 
 该composer 包是用来方便element-ui读取文件目录的
 
-# Install
+## Install
 
 ```
 composer require tu6ge/element-tree
 ```
 
-# Use
+## Use
 
 ```php
 include_once "vendor/autoload.php";
@@ -51,5 +51,5 @@ export default {
 
 ```
 
-最终的效果
+## 最终的效果
 ![](http://github.com/tu6ge/element-tree/raw/master/img/view.png)
