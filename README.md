@@ -10,6 +10,7 @@ composer require tu6ge/element-tree
 
 ## Use
 
+php代码：
 ```php
 include_once "vendor/autoload.php";
 
@@ -19,7 +20,7 @@ $rs = $tree->get(__DIR__);
 $json = json_encode($rs);
 
 ```
-
+vue 代码：
 ```vue
 <template>
    <el-tree :data="list" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
