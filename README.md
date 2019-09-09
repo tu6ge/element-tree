@@ -10,7 +10,7 @@
 composer require tu6ge/element-tree
 ```
 
-## Use
+## Usage
 
 php代码：
 ```php
@@ -22,7 +22,7 @@ $rs = $tree->get(__DIR__);
 $json = json_encode($rs);
 
 ```
-vue 代码：
+vue code：
 ```vue
 <template>
    <el-tree :data="list" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
@@ -54,7 +54,7 @@ export default {
 
 ```
 
-## 最终的效果
+## Preview
 ![img](img/preview.png)
 
 
