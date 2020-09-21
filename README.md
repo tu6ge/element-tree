@@ -34,7 +34,7 @@ export default {
   data () {
     return {
         msg: 'Welcome to Your Vue.js App',
-        list: 'php response json data'
+        list: [...],// 这里加上php返回的数据
         defaultProps: {
           children: 'children',
           label: 'label'
