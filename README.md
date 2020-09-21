@@ -10,6 +10,10 @@
 composer require tu6ge/element-tree
 ```
 
+## 关于版本号
+
+采用 [语义化版本](https://semver.org/lang/zh-CN/) 2.0.0
+
 ## Usage
 
 php代码：
